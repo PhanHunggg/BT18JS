@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.ex {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  border-radius: 10px;
+}
+.btn.btn-success {
+  padding: 0.7rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.array {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgb(1 1 1 / 46%) 0px 5px 5px 0px;
+}
+.array p {
+  font-size: 30px;
+  font-weight: 600;
+}
+#sumNumber {
+  display: none;
+}
+#countNumber {
+  display: none;
+}
+#minNumber {
+  display: none;
+}
+#minDNumber {
+  display: none;
+}
+#tensNumber {
+  display: none;
+}
+#convertNumber {
+  display: none;
+}
+#increasingNumber {
+  display: none;
+}
+#primeNumber {
+  display: none;
+}
+#count2Number {
+  display: none;
+}
+#checkNumberFloat {
+  display: none;
+}
+#btnFloat {
+  display: none;
+}
+.borBt {
+  border-bottom: 1px solid #000;
+}
+form label{
+  font-weight: 600;
+  font-size: 25px;
+  color: #000;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+        <div class="ex p-5">
+          <h2 class="text-center">BÀI TẬP BUỔI 18</h2>
+          <!-- NHẬP XUẤT MẢNG -->
+            <form class="borBt">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nhập mảng</label>
+                  <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp">
+                </div>
+                <div class="array">
+                    <p>Mảng: <span id="arr__number"></span></p>
+                </div>
+                <button
+                  type="button"
+                  onclick="createNumber()"
+                  class="btn btn-success my-4"
+                >
+                  Thêm number
+                </button>
+              </form>
+              <!-- BÀI 1 -->
+              <div class="sum__Number mt-3 borBt">
+                <h4>BÀI 1: TÍNH TỔNG SỐ DƯƠNG</h4>
+                <div id="sumNumber" class="array">
+                  <p>Tổng số dương là: <span id="sum__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="sumNumber()"
+                class="btn btn-success my-4"
+              >
+                Tổng
+              </button>
+              </div>
+              <!-- BÀI 2 -->
+              <div class="count__Number mt-3 borBt">
+                <h4>BÀI 2: ĐẾM SỐ DƯƠNG</h4>
+                <div id="countNumber" class="array">
+                  <p>Số dương là: <span id="count__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="countNumber()"
+                class="btn btn-success my-4"
+              >
+                Đếm số dương trong mảng
+              </button>
+              </div>
+              <!-- BÀI 3 -->
+              <div class="min__Number mt-3 borBt">
+                <h4>BÀI 3: TÌM SỐ NHỎ NHẤT</h4>
+                <div id="minNumber" class="array">
+                  <p>Min: <span id="min__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="minNumber()"
+                class="btn btn-success my-4"
+              >
+                Số nhỏ nhất trong mảng:
+              </button>
+              </div>
+              <!-- BÀI 4 -->
+                 <div class="min__DNumber mt-3 borBt">
+                  <h4>BÀI 4: TÌM SỐ DƯƠNG NHỎ NHẤT</h4>
+                <div id="minDNumber" class="array">
+                  <p>Min: <span id="min__Dnumber"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="minDNumber()"
+                class="btn btn-success my-4"
+              >
+                Số dương nhỏ nhất trong mảng:
+              </button>
+              </div>
+              <!-- BÀI 5 -->
+              <div class="tens__Number mt-3 borBt">
+                <h4>BÀI 5: TÌM SỐ CHẴN CUỐI CÙNG TRONG MẢNG</h4>
+                <div id="tensNumber" class="array">
+                  <p>Số: <span id="tens__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="tensNumber()"
+                class="btn btn-success my-4"
+              >
+                Số chẵn cuối cùng:
+              </button>
+              </div>
+              <!-- BÀI 6 -->
+              <div class="convert__Number mt-3 borBt">
+                <h4> BÀI 6: ĐỔI CHỔ 2 VỊ TRÍ</h4>
+                <form>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <input type="number" class="form-control" placeholder="Vị trí 1" id="location1">
+                    </div>
+                    <div class="col">
+                      <input type="number" class="form-control" placeholder="Vị trí 2" id="location2">
+                    </div>
+                  </div>
+                </form>
+                <div id="convertNumber" class="array">
+                  <p>Mảng sau hoán đổi: <span id="convert__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="convertNumber()"
+                class="btn btn-success my-4"
+              >
+                Hoán đổi:
+              </button>
+              </div>
+              <!-- BÀI 7 -->
+              <div class="increasingLish mt-3 borBt">
+                <h4>BÀI 7: SẮP XẾP MẢNG TĂNG DẦN</h4>
+                <div id="increasingNumber" class="array">
+                  <p>Mảng tăng dần: <span id="increasing__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="increasingNumber()"
+                class="btn btn-success my-4"
+              >
+                Sắp xếp tăng
+              </button>
+              </div>
+              <!-- BÀI 8 -->
+              <div class="prime mt-3 borBt">
+                <h4>BÀI 8: TÌM SỐ NGUYÊN TỐ ĐẦU TIÊN TRÒN MẢNG</h4>
+                <div id="primeNumber" class="array">
+                  <p>Số nguyên tố: <span id="prime__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="checkPrimeNumber()"
+                class="btn btn-success my-4"
+              >
+                Tìm số nguyên tố
+              </button>
+              </div>
+
+              <!-- BÀI 9 -->
+              <form>
+                <h4>BÀI 9: NHẬP THÊM 1 MẢNG XEM MẢNG CÓ BN SỐ NGUYÊN</h4>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nhập mảng</label>
+                  <input type="number" class="form-control" id="numberFloat" aria-describedby="emailHelp">
+                </div>
+                <div class="array">
+                    <p>Mảng: <span id="float__number"></span></p>
+                </div>
+                <button
+                  type="button"
+                  onclick="createNumberFloat()"
+                  class="btn btn-success my-4"
+                >
+                  Thêm number
+                </button>
+              </form>
+
+              <div class="checkNumberListFloat mt-3 borBt">
+                <div id="checkNumberFloat" class="array">
+                  <p>Số nguyên: <span id="check__numberFloat"></span></p>
+              </div>
+              <button
+              id="btnFloat"
+                type="button"
+                onclick="checkNumberListFloat()"
+                class="btn btn-success my-4"
+              >
+                Kiểm tra:
+              </button>
+              </div>
+
+              <!-- BÀI 10 -->
+              <div class="count__2 mt-3">
+                <h4>BÀI 10: SO SÁNH SÔ DƯƠNG SỐ ÂM</h4>
+                <div id="count2Number" class="array">
+                  <p>Kết quả: <span id="count2__number"></span></p>
+              </div>
+              <button
+                type="button"
+                onclick="count2Number()"
+                class="btn btn-success my-4"
+              >
+                Đếm
+              </button>
+              </div>
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./models/number.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
